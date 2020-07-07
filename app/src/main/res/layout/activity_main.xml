@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitCenter0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:tooltipText="fitCenter"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitCenter1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:tooltipText="fitCenter"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_fitCenter0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitXY0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:tooltipText="fitXY"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_fitCenter0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitXY1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:tooltipText="fitXY"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_fitXY0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitStart0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitStart"
+            android:tooltipText="fitStart"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_fitXY0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitStart1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitStart"
+            android:tooltipText="fitStart"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_fitStart0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitEnd0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitEnd"
+            android:tooltipText="fitEnd"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_fitStart0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_fitEnd1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitEnd"
+            android:tooltipText="fitEnd"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_fitEnd0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_center0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:tooltipText="center"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_fitEnd0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_center1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:tooltipText="center"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_center0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_centerInside0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerInside"
+            android:tooltipText="centerInside"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_center0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_centerInside1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerInside"
+            android:tooltipText="centerInside"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_centerInside0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_centerCrop0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:tooltipText="centerCrop"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_centerInside0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_centerCrop1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:tooltipText="centerCrop"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_centerCrop0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_matrix0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="matrix"
+            android:tooltipText="matrix"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_centerCrop0"
+            app:srcCompat="@drawable/icon_84x150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_matrix1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="matrix"
+            android:tooltipText="matrix"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/image_matrix0"
+            app:srcCompat="@drawable/icon_1080x1920" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
